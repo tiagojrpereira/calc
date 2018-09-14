@@ -20,4 +20,17 @@ public class App
 	String concat(String s1, String s2) {
 		return s1+s2;
 	}
+	
+	int add(int a, int b){
+		return a+b;
+	}
+	int subtract(int a, int b){
+		return a-b;
+	}
+	int multiply(int a, int b){
+		return a*b;
+	}
+	int divide(int a, int b){
+		return a/b;
+	}
 }
