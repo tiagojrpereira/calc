@@ -1,5 +1,7 @@
 package pa.app;
 
+import java.util.logging.Logger;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -17,7 +19,7 @@ public class AppTest
 {
 	@BeforeEach 
 	public void init() {
-		System.out.println("@BeforeEach - Runbefore Each method");
+		logger.info("@BeforeEach - Runbefore Each method");
 	}	
 	
     @DisplayName("First Test - concat")
@@ -39,16 +41,18 @@ public class AppTest
 	@DisplayName("Third Test - add")
 	@Test
 	void testAdd() {
-			App ap = new App();
-			int x=0, y=2;
-			assertEquals(ap.add(x, y), 2);
-		}	
+		App ap = new App();
+		int x=0; 
+		int y=2;
+		assertEquals(ap.add(x, y), 2);
+	}	
 	
 	@DisplayName("Fourth Test - subtract")
 	@Test
 	void testSubtract() {
 		App ap = new App();
-		int x=2, y=1;
+		int x=2;
+		int y=1;
 		assertEquals(ap.subtract(x, y), 1);
 	}	
 	
@@ -56,7 +60,8 @@ public class AppTest
 	@Test
 	void testMultiply() {
 		App ap = new App();
-		int x=2, y=2;
+		int x=2;
+		int y=2;
 		assertEquals(ap.multiply(x, y), 4);
 	}	
 	
@@ -64,7 +69,8 @@ public class AppTest
 	@Test
 	void testDivide() {
 		App ap = new App();
-		int x=10, y=5;
+		int x=10;
+		int y=5;
 		assertEquals(ap.divide(x, y), 2);
 	}	
 }
