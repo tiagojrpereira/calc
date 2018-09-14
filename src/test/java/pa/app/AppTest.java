@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class AppTest 
 {
-	@BeforeEach 
+	//@BeforeEach 
 	public void init() {
 		System.out.println("@BeforeEach - Runbefore Each method");
 	}	
