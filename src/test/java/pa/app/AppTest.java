@@ -39,28 +39,32 @@ public class AppTest
 	@DisplayName("Third Test - add")
 	@Test
 	void testAdd() {
+			App ap = new App();
 			int x=0, y=2;
-			assertEquals(add(x, y), 2);
+			assertEquals(ap.add(x, y), 2);
 		}	
 	
 	@DisplayName("Fourth Test - subtract")
 	@Test
 	void testSubtract() {
+		App ap = new App();
 		int x=2, y=1;
-		assertEquals(add(x, y), 1);
+		assertEquals(ap.subtract(x, y), 1);
 	}	
 	
 	@DisplayName("Fifth Test - multiply")
 	@Test
 	void testMultiply() {
+		App ap = new App();
 		int x=2, y=2;
-		assertEquals(add(x, y), 4);
+		assertEquals(ap.multiply(x, y), 4);
 	}	
 	
 	@DisplayName("Sixth Test - divide")
 	@Test
 	void testDivide() {
+		App ap = new App();
 		int x=10, y=5;
-		assertEquals(add(x, y), 2);
+		assertEquals(ap.divide(x, y), 2);
 	}	
 }
