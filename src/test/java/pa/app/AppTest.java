@@ -1,7 +1,5 @@
 package pa.app;
 
-import java.util.logging.Logger;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -19,7 +17,7 @@ public class AppTest
 {
 	@BeforeEach 
 	public void init() {
-		logger.info("@BeforeEach - Runbefore Each method");
+		System.out.println("@BeforeEach - Runbefore Each method");
 	}	
 	
     @DisplayName("First Test - concat")
